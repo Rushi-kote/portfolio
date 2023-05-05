@@ -1,0 +1,134 @@
+.home-hero {
+    color: #fff;
+    background: linear-gradient(to right,rgba(245,245,245,.8),rgba(245,245,245,.8)),url("https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg");
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.home-hero__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 90rem;
+    width: 70%;
+}
+
+.heading-primary {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #111;
+    font-weight: 800;
+    font-size: 45px;
+}
+
+.home-hero__info {
+    margin: 3rem auto 0 auto;
+    max-width: 80rem;
+}
+
+.text-primary {
+    color: #333;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    line-height: 1.6;
+
+}
+
+.home-hero__cta {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.home-hero__socials {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    box-shadow: rgba(100,100,111,.2) 0 7px 29px 0;
+    padding-left: 10px;
+}
+
+.home-hero__social {
+    width: 55px;
+    /* border-radius: 7px; */
+}
+
+
+.home-hero__social-icon-link {
+    width: 60%;
+    display: block;
+    padding-top: 10px;
+    transition: background .3s;
+    border-radius: 5px;
+}
+
+
+
+.home-hero__social-icon {
+    width: 100%;
+}
+
+.home-hero__cta {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+
+.btn {
+    background: #facf0f;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,.15);
+    transition: transform .3s;
+}
+
+.btn--bg {
+    padding: 10px 58px;
+    font-size: 28px;
+}
+
+.home-hero__mouse-scroll-cont {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mouse {
+    width: 25px;
+    height: 40px;
+    border: 2px solid #333;
+    border-radius: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.mouse::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    border-radius: 50%;
+    opacity: 1;
+    animation: wheel 1.3s infinite;
+    -webkit-animation: wheel 1.3s infinite;
+}
+
+@keyframes wheel {
+    to {
+        opacity: 0;
+        top: 27px
+    }
+}
