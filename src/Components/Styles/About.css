@@ -66,6 +66,7 @@
     font-weight: 700;
     font-size: 25px;
     margin-bottom: 20px;
+    margin-top: 75px;
 }
 
 .about__content-details-para {
@@ -119,6 +120,7 @@
     height: 138px;
     content: '';
     background: #ddd;
+    height: 100%
 }
 
 .timeline-container{
@@ -201,6 +203,14 @@
     margin: 1em 0;
 }
 
+.fa-chevron-down{
+    opacity: 0.7;
+}
+
+.fa-chevron-down:hover{
+    opacity: 1;
+}
+
 .timeline-content .cd-date {
     float: left;
     padding: 0.8em 0;
@@ -213,11 +223,20 @@
 
 .more{
     display: none;
-}
-.moreDisplay{
-    display: inline-block;
+    transition: all;
 }
 
+.moreDisplay{
+    display: inline-block;
+    transition: all;
+
+}
+.position{
+    position: relative;
+    top: 30px;
+    left: -202px;
+    display: inline-block;
+}
 /* .hover :hover {
     cursor: pointer;
 } */

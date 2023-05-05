@@ -6,12 +6,30 @@ import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 
 const About = () => {
 
-  const [DynamicClassName,setDynamicClassName] = useState("more");
+  const [DynamicClassNameExp,setDynamicClassNameExp] = useState("more");
+  const [DynamicClassNameBE,setDynamicClassNameBE] = useState("more");
+  const [DynamicClassNameXII,setDynamicClassNameXII] = useState("more");
+  const [DynamicClassNameX,setDynamicClassNameX] = useState("more");
 
-  const changeClassName = ()=>{
-    setDynamicClassName("moreDisplay");
+  const changeClassNameExp = ()=>{
+    setDynamicClassNameExp("moreDisplay");
     let button = document.getElementsByClassName("more-trigger");
     button[0].style.display = 'none';
+  }
+  const changeClassNameBE = ()=>{
+    setDynamicClassNameBE("moreDisplay");
+    let button = document.getElementsByClassName("more-trigger");
+    button[1].style.display = 'none';
+  }
+  const changeClassNameXII = ()=>{
+    setDynamicClassNameXII("moreDisplay");
+    let button = document.getElementsByClassName("more-trigger");
+    button[2].style.display = 'none';
+  }
+  const changeClassNameX = ()=>{
+    setDynamicClassNameX("moreDisplay");
+    let button = document.getElementsByClassName("more-trigger");
+    button[3].style.display = 'none';
   }
 
   return (
@@ -69,12 +87,12 @@ const About = () => {
             </div>
 
             <div class="timeline-content">
-              <button onClick={changeClassName} className="more-trigger">
-                <i class="fa fa-chevron-down"></i>
+              <button onClick={changeClassNameExp} className="more-trigger">
+                <FontAwesomeIcon icon="faSolid fa-chevron-down" />
               </button>
               <h2>Associate</h2>
               {/* <span class="text-muted">React JS Specialist</span> */}
-              <div className={DynamicClassName}>
+              <div className={DynamicClassNameExp}>
                 <p>
                   <ul>
                     <li>1 year of work experience in ReactJS, NodeJs</li>
@@ -88,6 +106,74 @@ const About = () => {
                 </p>
               </div>
               <span class="cd-date">Jan 2021 - Present</span>
+            </div>
+          </div>
+        </div>
+        <div class=" timeline-container ">
+          <h3 className="about__content-title">Education</h3>
+          <div class="timeliner timeline-block">
+            <div class="timeline-icon">
+               <FontAwesomeIcon icon="fa-solid fa-graduation-cap" />
+            </div>
+            <div class="timeline-content">
+              <button onClick={changeClassNameBE} className="more-trigger">
+                <i class="fa fa-chevron-down"></i>
+                <FontAwesomeIcon icon="faSolid fa-chevron-down" />
+              </button>
+              <h2>BE in CSE</h2>
+              {/* <span class="text-muted">React JS Specialist</span> */}
+              <div className={DynamicClassNameBE}>
+                <p>
+                  <ul>
+                    <li>I've completed my gratuation from <b>Amritvahini College of Engineering</b> in year 2020</li>
+                    <li>with firstClass 7.59/10 CGPA </li>
+                    <li>I've complete my BE in Computer Science Engineering</li>
+                  </ul>
+                </p>
+              </div>
+              <span class="cd-date">Jul 2016 - May 2020</span>
+            </div>
+          
+          
+            <div class="timeline-icon position">
+              <FontAwesomeIcon icon="fa-solid fa-school" />
+            </div>
+            <div class="timeline-content">
+              <button onClick={changeClassNameXII} className="more-trigger">
+                <FontAwesomeIcon icon="faSolid fa-chevron-down" />
+              </button>
+              <h2>HSC (XII)</h2>
+              {/* <span class="text-muted">React JS Specialist</span> */}
+              <div className={DynamicClassNameXII}>
+                <p>
+                  <ul>
+                    <li>I've completed my Higher Secondary school from <b>Rayreshwar Seconday and Higher Secondary School</b> in year 2016</li>
+                    <li>with firstClass 68.30% </li>
+                  </ul>
+                </p>
+              </div>
+              <span class="cd-date">Jul 2015 - May 2016</span>
+            </div>
+          
+          
+            <div class="timeline-icon position">
+              <FontAwesomeIcon icon="fa-solid fa-school" />
+            </div>
+            <div class="timeline-content">
+              <button onClick={changeClassNameX} className="more-trigger">
+                <FontAwesomeIcon icon="faSolid fa-chevron-down" />
+              </button>
+              <h2>SSC (X)</h2>
+              {/* <span class="text-muted">React JS Specialist</span> */}
+              <div className={DynamicClassNameX}>
+                <p>
+                  <ul>
+                    <li>I've completed my Secondary school from <b>Rayreshwar Seconday and Higher Secondary School</b> in year 2014</li>
+                    <li>with Distinction 89.60% </li>
+                  </ul>
+                </p>
+              </div>
+              <span class="cd-date">Jul 2013 - May 2014</span>
             </div>
           </div>
         </div>
